@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+	}
+@font-face{
+	font-family: superhero;
+	src: url(../fonts/super_hero/intsh.otf);
+	}
+body{
+	background-repeat: no-repeat;
+	background-position: fixed;
+	background-size: 100%;
+	}
+#top ul{
+	position: fixed;
+	width: 100%;
+	margin-top: 60%;
+	list-style-type: none;
+	text-align: center;
+	}
+#top li{
+	background-color: #f4b678;
+	padding: .3em .3em .3em .3em;
+	border-style: solid;
+	border-width: .1em;
+	color: #f4a864;
+	}
+#top a:link, #top a:visited{
+	font-family: superhero;
+	text-decoration: none;
+	color: white;
+	font-size: 1.3em;
+	}
+#bottom ul{
+	position:fixed;
+	top: 0;
+	width: 100%;
+	list-style-type: none;
+	text-align: center;
+	}
+#bottom li{
+	display: inline;
+	margin-right: 1em;
+	}
+#bottom a:link, #bottom a:visited{
+	text-decoration: none;
+	color: white;
+	font-size: 2.3em;
+	}
+p{
+	width: 40%;
+	margin-left: 52%;
+	margin-top: -76%;
+	font-family: superhero;
+	font-size: .7em;
+	}
