@@ -1,73 +1,80 @@
 *{
-	margin: 0;
-	padding: 0;
+	margin:0;
+	padding:0;
 	}
 @font-face{
 	font-family: superhero;
 	src: url(../fonts/super_hero/intsh.otf);
 	}
-body{
-	background-repeat: no-repeat;
-	background-position: fixed;
-	background-size: cover;
-	background-color: #FFFFFF;
-	}
+html{
+    height:100%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:top center;
+}
 #top ul{
 	position: fixed;
 	list-style-type: none;
 	background-color: white;
 	opacity: .3;
 	width: 100%;
-	padding: 1em 1em 1em 1em;
+	padding: 0.8em 0.8em 0.8em 0.8em;
 	text-align: center;
 	}
 #top li{
 	display: inline;
-	padding-right: 6em;
+	padding-right: 5em;
 	}
 #top a:link, #top a:visited{
 	font-family: superhero;
 	text-decoration: none;
 	color: darkorange;
-	font-size: 2em;
+	font-size: 1.4em;
 	}
 #top a:hover, #top a:active{
 	color: brown;
+    cursor:pointer;
 	}
-#bottom ul{
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	list-style-type: none;
-	text-align: center;
-	}
-#bottom li{
-	display: inline;
-	margin-right: 1em;
-	}
-#bottom a:link, #bottom a:visited{
-	text-decoration: none;
-	color: white;
-	font-size: 43px;
-	}
-#bottom a:hover, #bottom a:active{
-	color: brown;
-	transition-duration: .3s;
-	}
-p{
-	width: 500px;
+#hiddenNav.overlay{
+    visibility: hidden;
+}
+#open{
+    visibility: hidden;
+}
+/*p{
+	width: 14em;
 	float: right;
-	margin-right: 50px;
-	margin-top: 300px;
+	margin-right: 7em;
+	margin-top: 13em;
 	font-family: superhero;
-	font-size: 2.2em;
+	font-size: 1.2em;
 	}
 p a:link, p a:visited{
 	color: black;
-	font-size: 43px;
+	font-size: 1.8em;
 	}
 p a:hover, p a:active{
 	color: brown;
-	transition-duration: .3s;
-	}
-
+	transition-duration: .2s;
+	}*/
+.flip a{
+    position:fixed;
+    top:46%;
+    color:white;
+    opacity:.5;
+    font-size:2.5em;
+    text-decoration:none;
+    font-family:courier new;
+}
+.flip a:hover{
+    color: brown;
+	transition-duration: .2s; 
+}
+.flip#right a{
+    right:0;
+    margin-right:15px;
+}
+.flip#left a{
+    left:0;
+    margin-left:15px;
+}

@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+	}
+@font-face{
+	font-family: superhero;
+	src: url(../fonts/super_hero/intsh.otf);
+	}
+html{
+    height:100%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    font-family:superhero;
+}
+#top ul{
+    visibility: hidden;
+	position: fixed;
+	list-style-type: none;
+	background-color: white;
+	opacity: .3;
+	width: 100%;
+	padding: .5em .5em .5em .5em;
+	text-align: center;
+	}
+#top li{
+	display: inline;
+	padding-right: 3em;
+	}
+#top a:link, #top a:visited{
+	text-decoration: none;
+	color: darkorange;
+	font-size: 1.3em;
+	}
+/*#top a:hover, #top a:active{
+	color: brown;
+	}
+*/
+/*p{
+	width: 35%;
+	margin-left: 30%;
+	padding-top:13%;
+	font-family: superhero;
+	font-size: 1.2em;
+	}
+*/
+.overlay{
+    position:fixed;
+    height:100%;
+    width:0;
+    z-index:1;
+    /*background-color: rgba(249,153,38,0.95);*/
+    transition:0.5s;
+}
+.overlay-content{
+    position:relative;
+    top:30vh;
+    left:10%;
+}
+.overlay-content a{
+    padding-bottom:7vh;
+    text-decoration:none;
+    font-size:0;
+    letter-spacing: 0.5vw;
+    color:white;
+    display:block;
+}
+.overlay #close{
+    position:absolute;
+    top:2vw;
+    right:5.5vw;
+    font-size:8.5vw;
+    color:white;
+}
+#open{
+    color:white;
+    font-size:6.5vw;
+    position: fixed;
+    top:2vw;
+    left:4.5vw;
+    opacity:0.7;
+}
+.flip a{
+    position:fixed;
+    bottom:1.5vw;
+    color:white;
+    opacity:.7;
+    font-size:9vw;
+    text-decoration:none;
+    font-family:courier new;
+}
+/*.flip a:hover{
+    color: brown;
+	transition-duration: .2s; 
+}*/
+.flip#right a{
+    right:0;
+    margin-right:4.5vw;
+}
+.flip#left a{
+    left:0;
+    margin-left:4.5vw;
+}

@@ -1,40 +1,76 @@
 <!DOCTYPE html>
 <html lang=en>
-<head>
-<meta charset=UTF-8>
-<title>Science, Page 5</title>
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-<link rel=stylesheet media="screen and (min-width:780px)" href="../css/desktop.css">
-<link rel=stylesheet media="screen and (min-width:480px) and (max-width:780px)" href="../css/tablet.css">
-<link rel=stylesheet media="screen and (max-width:480px)" href="../css/mobile.css">
 
-<style>
-body{
-	background-image: url(../images/science6.gif);
-	width: 1280px;
-	height: 800px;
-	}
-</style>
+<head>
+    <meta charset=UTF-8>
+    <title>Chapter 1 | Page 5</title>
+
+    <link rel=stylesheet media="screen and (min-width:1024px)" href="../css/desktop.css">
+    <link rel=stylesheet media="screen and (max-width:768px) and (orientation:portrait)" href="../css/portrait.css">
+    <link rel=stylesheet media="screen and (max-width:1023px) and (orientation:landscape)" href="../css/landscape.css">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <style>
+        @media screen and (orientation:landscape) {
+            html {
+                background-image: url(../images/science6.gif);
+                background-color: #b9c7cd;
+            }
+        }
+        
+        @media screen and (orientation:portrait) {
+            html {
+                background-image: url(../images/science6P.gif);
+                background-color: #b9c7cd;
+            }
+        }
+        
+        .overlay {
+            background-color: rgba(185, 199, 205, 0.95);
+        }
+    </style>
 
 </head>
 
 <body>
-<nav id=top>
-	<ul>
-		<li><a href=home.html>Home</a></li>
-		<li><a href=intro.html>Introduction</a></li>
-		<li><a href=what_is_happening.html>What is happening?</a></li>
-		<li><a href=what_to_do.html>What to do?</a></li>
-		<li><a href=what_now.html>What now?</a></li>
-	</ul>
-</nav>
 
-<nav id=bottom>
-	<ul>
-		<li><a href=sciencefour.html title="Back">< </a></li>
-		<li><a href=what_to_do.html title="Next">></a></li>
-	</ul>
-</nav>
+    <!--Desktop navigation-->
+    <nav id=top>
+        <ul>
+            <li><a href=home.html>Home</a></li>
+            <li><a href=intro.html>Introduction</a></li>
+            <li><a href=what_is_happening.html>1. What is happening?</a></li>
+            <li><a href=what_to_do.html>2. What to do?</a></li>
+            <li><a href=what_now.html>3. What now?</a></li>
+        </ul>
+    </nav>
 
+    <!--Tablet and mobile navigation-->
+    <div id="hiddenNav" class="overlay">
+
+        <span id="close">&times;</span>
+
+        <div class="overlay-content">
+            <a href=home.html>Home</a>
+            <a href=intro.html>Introduction</a>
+            <a href=what_is_happening.html>1. What is happening?</a>
+            <a href=what_to_do.html>2. What to do?</a>
+            <a href=what_now.html>3. What now?</a>
+        </div>
+    </div>
+
+    <span id="open">&#9776;</span>
+
+    <!--Flip the page-->
+    <nav class=flip id=left>
+        <a href=sciencefour.html title="Back"><</a></nav>
+    <nav class=flip id=right>
+        <a href=what_to_do.html title="Next">></a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script language="javascript" src="../js/nav.js"></script>
 </body>
+
 </html>
